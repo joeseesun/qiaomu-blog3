@@ -268,7 +268,7 @@ try {
     if (settingsCount.count === 0) {
       console.log('添加默认网站设置数据...');
       sqlite.exec(`
-        INSERT INTO site_settings (key, value, group) VALUES
+        INSERT INTO site_settings (key, value, setting_group) VALUES
         ('title', '向阳乔木的个人博客', 'general'),
         ('description', '分享技术、生活和思考，记录成长的点滴。', 'general'),
         ('logo', '/images/logo.png', 'general'),
